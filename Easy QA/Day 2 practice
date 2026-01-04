@@ -1,0 +1,93 @@
+Q7: Change (Switch) your directory to "/tmp/devops/" ?
+
+cd /tmp/devops/
+
+Notes: cd command is used to change the directory, using cd we can switch to the given path
+
+Q8: Switch your directory to /tmp/autopilot and then print "Hello Devops" into the "devops.txt" file in the "/tmp/autopilot" directory ?
+
+cd /tmp/autopilot ; echo "hello devops" > devops.txt 
+
+Notes: 2 commands , cd to switch directory and echo > is used to set something inside an folder 
+
+
+Q9: Display the content of "/tmp/autopilot/devops.txt" file on screen ?
+
+cat devops.txt 
+
+Notes: Cat command is used to check/ print what content is available inside a file 
+
+Q10: Switch your directory to /tmp/autopilot then Create a copy of "devops.txt" file and name the copy as "sre.txt" ?
+
+cp /tmp/autopilot/devops.txt /tmp/autopilot/sre.txt
+
+
+Notes: CP command is used for copying contents from one place to another 
+
+Q11: Move "/tmp/autopilot/pilot.txt" file to "/etc" directory ?
+
+mv /tmp/autopilot/pilot.txt /etc/pilot.txt
+
+Notes: The command "mv" is used to move files from one place to another 
+
+Q12: Delete the file "/etc/pilot.txt" ?
+
+rm  /etc/pilot.txt
+
+Notes: rm command is used to remove files
+
+Q13: Create an empty file "devops.txt" under "/tmp/autopilot" directory and then remove the file "/tmp/autopilot/devops.txt" forcefully with "rm" command ?
+
+>touch /tmp/autopilot/devops.txt
+>rm -f /tmp/autopilot/devops.txt
+
+Notes: rm -f , Here -f is the force option in the rm command 
+
+Q14: Switch your directory to "/etc" and then display top 10 rows of "group" file ?
+
+>cd /etc 
+>head group 
+
+Notes: Head command is used to print out top 10 lines of the any file 
+
+Q15: Switch your directory to "/etc" and then display top 5 rows of group file ?
+
+>cd /etc
+>head -5 group
+
+Notes: Here -5 is the option to display top 5 instead of the defaul 10
+
+Q16: Switch your directory to "/etc" and then display last 10 rows of "group" file ?
+
+>cd /etc
+>tail group
+
+Notes: Tail is the command to use to get the last 10 rows of a file 
+
+
+Q17: Switch your directory to "/etc" and then display last 2 rows of "group" file ?
+
+>cd /etc
+>tail -2 group
+
+Notes: _2 is the option here for tail 
+
+Q18: Print the current date and time on screen ?
+
+>date
+
+Notes: The date comamnd prints the time and date of the system
+
+Q19: Print current date in the format "DD/MM/YYYY" ?
+
+>date +'%d/%m/%Y'
+
+Notes: we can pass required pattern with date command , for eg: date +'%d/%m/%Y' , here %d is for current date , %m for month and %Y is for the current year
+
+Q20: Print current time in the format "HH:SS" ?
+
+>date +'%H:%S'
+
+Notes : can pass required pattern with date command , for eg: date +'%H:%M' , here %H is for current Hour , %M for running minute and %S for seconds usually from 00-59
+
+

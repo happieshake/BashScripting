@@ -1,0 +1,65 @@
+Q21: Display current month calendar on screen ?
+
+>cal
+
+Notes:  cal command is used to print the current month calendar on screen
+
+Q22: Display the hostname of your current server ?
+
+>hostname
+
+Notes: Hostname command is used for displaying the hostname of the current machine 
+
+Q23: Display the current logged in username ?
+
+>whoami
+
+Notes: whoami command is to figure out the username of the logged in user 
+
+Q24: Ping "udemy.com" from your terminal ?
+
+>ping -c5 udemy.com
+
+Notes: Ping command is used to ping any web address , and -c5 is used to send 5 packets and  ping command is used to test connectivity, reachability.
+
+Q25: Print recently triggered commands on your Linux system ?
+
+>history
+
+Notes: history cpmmand is used to view the list of commands that iser had triggered on the terminal
+
+Q26: Query the Domain Name System for "Udemy.com" ?
+
+
+>nslookup udemy.com
+or
+>dig udemy.com
+
+Notes: nslookup is concise , Dig is more elaaborative with a lot of output
+
+Q27: Identify the location of executable "bash" ?
+
+>which bash
+
+Notes: which command is used to find out the executable file associated with the command
+
+Q28: List all running processes with full format listing for each process ?
+
+>ps -ef
+
+Notes: ps command will print the running processes, -e will select all the processes from system and -f will provide full-format listing for every process running on system
+
+Q29: Display what programs are currently running on the system and how much system resources they are utilizing ?
+
+>top
+
+Notes:  top command will show the real-time view of running processes in the Linux System
+
+Q30: Which command is used to download/upload data to a server with supported protocols such as HTTP, FTP, SFTP, IMAP, POP3, etc ?
+
+>curl
+
+notes:  curl command is used by developers to transfer data to and from any server
+
+
+

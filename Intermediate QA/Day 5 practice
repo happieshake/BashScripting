@@ -1,0 +1,73 @@
+Q41: Delete the User "devops" from your machine ?
+
+> userdel devops
+
+Notes:
+Userdel command is used to delete and user 
+
+Q42: Install a new package "httpd" on your machine ?
+
+> Sudo apt-get install httpd
+> Sudo <packageManager> httpd
+> sudo yum install httpd
+
+Notes: Sudo is for assuming Adin status and the package manager and install whatever is required
+
+Q43: Remove package "httpd" form your machine ?
+
+>yum remove httpd
+
+Notes: remove is used to remove literally 
+
+Q44: Put your terminal on sleep for 30 Seconds ?
+
+>sleep 30
+
+Notes: Sleep command is used for puting a interval between 2 commands
+
+Q45: List all the files under "/etc" directory which are modified in last 30 days ?
+
+> find /etc -iname "*" -type f -mtime -30
+
+Notes: Find command is used to find stuff inside Directories 
+-iname "*" , -iname is for turning off the sensitivity and  is to match everything, Acts like an wild card -type f for including only files and -mtime is an option to set the days and -30 is less than 30 days , if +30 more than 30 days and if 30 is set exactly 30 days ago so for example -mtime 4 this would mean 4 days exactly
+
+
+Q46: Grep "root" keyword from "/var/log/dnf.log" file ?
+
+>grep "root" /var/log/dnf.log
+
+grep command is used to search string in given file
+
+Q47: Print the count (# of times, root keyword found) by performing grep "root" keyword from "/var/log/dnf.log" file ?
+
+>grep -c "root" /var/log/dnf.log 
+
+
+Q48: Follow the below steps:
+
+· Create an empty file "devops.txt"
+
+· echo "Test" > devops.txt
+
+> sed  "s/Test/Hello/" > devops.txt
+
+Notes: Sed isused to change an text inside 
+
+Q49: Print Second Column of top 100 rows from '/var/log/dnf.log' file ?
+
+> awk '{print$2}' /var/log/dnf.log | head -100
+
+Notes : awk is used to change $2 is second row head -100 is top 100 rows
+
+Q50: Print second and third column from '/var/log/dnf.log' file , print only for top 50 rows ?
+
+>awk '{print$2,$3}' /var/log/dnf.log | head -50
+
+
+
+
+
+
+
+

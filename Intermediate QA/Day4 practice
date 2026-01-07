@@ -1,0 +1,71 @@
+Q31: Retrieves content from web "udemy.com" into index.html file ?
+
+>wget udemy.com
+
+notes: Wget is used to get the details in html format 
+This will return with an status code the html body and other detailsd 
+But it needs to be installed beforehand using pack manager yum or apt in ubuntu
+
+
+Q32: Search "Git" package for Linux machine ?
+
+>yum search git 
+>apt show git
+
+Notes: yum search <package> or apt show <package>
+This is used to search the packagae and the versions
+
+yum OR apt or any pacakgae manager is used to  allows the users to install, update, remove or searching a software package
+
+
+Q33:  Print information about your Linux system like the machine name, operating system ?
+
+>uname 
+
+Notes: uname will print the name and few other details about the current machine
+
+Q34: Display the status of TCP and UDP endpoints, routing table info., and interface information ?
+
+>netstat
+
+Notes: netstat command is used for figuring the network status and the protocol statistics
+
+Q35: Display the disk space used in the file system ?
+
+>df
+
+Notes: df command will display the disk space utilization in the file system
+
+Q36: Display the disk space used in the Human-Readable format (eg: in MB/GB) ?
+
+>df -h 
+
+Notes: -h option makes it human readable 
+
+Q37: Print the network interface configuration information on screen ?
+
+> ifconfig
+
+Notes: ifconfig is used to figure the netwrok interface on the screen
+
+Q38: Display details about block devices on your linux machine ?
+
+>lsblk
+
+Notes: lsblk command lists all the blocked devices on the linux machine!
+
+Q39: Print the message buffer of the kernel on your linux OS ?
+
+> dmesg
+
+Notes: dmesg command is used to examine the kernel's ring buffer and also to display the kernel related messages
+
+Q40:  Create a new User name as "devops" on linux ?
+
+> sudo adduser devops
+
+Notes: Sudo is for taking admin cred for a single command and adduser is the command to add the user
+
+
+
+

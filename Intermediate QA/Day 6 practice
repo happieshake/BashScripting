@@ -1,0 +1,82 @@
+Q51: Create a script that will print "Hello World" on Screen ?
+
+#!/bin/bash
+echo "Hello World"
+
+Notes : to run this script if this is saved as script1.sh
+need to use ./ script1.sh
+
+Q52: Create a script that will print system date and time on Screen ?
+
+
+Vi datetime.sh
+
+#!/bin/bash
+date
+
+Notes: ./ datetime.sh is used to run the script
+
+Q53: Create a script that will take user name as input and then print the same on Screen ?
+
+#!/bin/bash
+read -p "enter your name" username
+echo $username
+
+Notes: Read command is used to take input from user 
+and -p is to prompt something
+
+This can also be done as 
+
+#!/bin/bash
+echo "Enter username"
+read username
+echo $username - $ is used to display ENV variables which are put in by the user
+
+
+Q54: Create a script that will go to sleep for 60 seconds and then print "Good Bye" on screen ?
+
+#!/bin/bash 
+sleep 60 
+echo "Good Bye"
+
+Notes: sleep 60 is used to put sleep inbetween operation (waitime) and 60 is the amount of seconds
+
+
+Q55: Create a script that will create a file with name "devops.txt" and insert the free memory details of your Linux machine in it ?
+
+#!/bin/bash
+touch devops.txt
+free -m > devops.txt
+
+Notes: Free -m will print the memory status on scree
+
+
+Q56: Create a script that will create a file with name "disk.txt" and insert the disk utilization details of your Linux machine in that file ?
+
+#!/bin/bash
+touch disk.txt
+df -h > disk.txt
+
+Notes : df-h is for figuring out the disk utilisation and -h is to show it in human readable format
+
+
+Q57: Create a script that will print "Even Day" if current date is an even number ?
+
+#!/bin/bash
+DATE = 'date+'%d''
+if [$DATE%2] -eq 0
+then
+echo "Even Day"
+fi
+
+Notes:
+Date is used to get the date and %d is for getting the exact date 
+then we use modulus function (%) to compare the remainder and -eq is to compare if output is equal to 
+we use "then" function to echo and fi to end the if else conditions
+
+
+
+
+
+
+

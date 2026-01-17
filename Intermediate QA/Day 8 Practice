@@ -1,0 +1,184 @@
+Q61: Write a script that will ask username and password from user and then using if condition verify if username="admin" and password="admin" , if condition meets then print "Login Success" else print "Wrong Login" ?
+
+#!/bin/bash
+read -p "username" usern
+read -p "password" passw
+if [[($usern=="admin" && $passw=="admin")]]
+then echo "Login success"
+else echo "Wrong Login"
+fi
+
+or
+
+#!/bin/bash
+echo "enter username"
+read usern
+echo "enter password"
+read passw
+if [[($usern=="admin"&& $passw=="admin")]]
+then echo "Login success"
+else echo "wrong Login"
+fi
+
+Notes : Read command is used to input things fromusers or read inputs and read-p is used for prompting user with reading the input given by them
+
+Q62: Write a script that will ask a number from user and then using if condition verify if number is divisible by 3 and 5 both , if condition meets then print "Divisible" else print "Not Divisible" ?
+
+#!/bin/bash
+Write a script that will ask a number from user and then using if condition verify if number is divisible by 3 and 5 both , if condition meets then print "Divisible" else print "Not Divisible" ?
+
+#!/bin/bash
+echo "give an number"
+read num
+if [[(($num%3))==0 $$ (($num%5))==0 ]]
+then echo "divisible"
+else echo "not divisible"
+fi
+
+notes: major cconfusion with syntax
+
+Q63: Write a script that will ask a number from user and then using if condition verify if number is divisible by 3 or 5 (any one) , if condition meets then print "Divisible" else print "Not Divisible" ?
+
+#!/bin/bash
+echo "give me an number"
+read num
+if (($num%3 ==0 || $num%5 == 0))
+then  echo "Divisible"
+else echo "Not divisble"
+fi
+
+Notes: Just use double brackets for any kind of arithmetic operation cleaner 
+
+Q64: Write a script that will ask a number from user and then using if condition verify if number is divisible by 3 or 5 or 7 (any one) , if condition meets then print "Divisible" else print "Not Divisible" ?
+
+#!/bin/bash
+read -p "give me an number" numero
+if (($numero%3 == 0 || $numero%5 == 0 || $numero%7 ==0))
+then echo "Divisible"
+else echo "Not Divisible"
+fi
+
+Q65: Write a script that will print numbers 1 to 20 on screen using for loop ?
+
+#!/bin/bash
+for i in {0..20}
+do
+echo "$i"
+done
+
+Notes: For , do and done are the syntax we can use for for loops 
+{} for defining a set of numbers
+
+Q66: Write a script that will create a directory with name "dummy" and then generate 10 empty files named like 1, 2 ... 10 in that dummy directory using for loop ?
+
+#!/bin/bash
+mkdir dummy
+for i in {1..10}
+do
+touch ./dummy/$i
+done 
+
+
+Q67: Write a script that will iterate between 1 to 100 and print all numbers divisible by 5 ?
+
+#!/bin/bash
+
+for i in {1..100}
+do 
+if $((i%5 == 0))  
+then echo $i
+fi
+done 
+
+Q68: Write a script that will print numbers 1 to 10 on screen using while loop ?
+
+#!/bin/bash
+i = 0
+while [$i -le 10]
+do 
+echo $i
+((i++))
+done
+
+Notes : since -le (less than) is a non arithmetic function we are using square backs 
+
+We can also do this 
+
+#!/bin/bash
+i = 0
+while ((i <= 10))
+do echo $i
+((i++))
+done 
+
+Notes : using arithmetic operation so using double simple brackets
+and i ++ is when we add 1 to the exisitng value 
+ 
+Q69: Write a script that will keep running (using while loop) with "sleep 1" command until user press ctrl+c to kill it ?
+
+#!/bin/bash
+i == 0
+while i >= 0 
+do echo "press ctrl or command + c to end"
+((i++))
+sleep 1
+done
+
+or 
+
+#!/bin/bash
+while :
+do
+echo "press CTRL+C or CMD+C to stop"
+sleep 1 
+done
+
+Notes: here While : always gives out success and never fails 
+but always prints the echo message 
+
+
+Q70: Write a script that will keep printing numbers from 1 to 10, if the number in loop is 2 then loop must break and shall not continue to print ?
+using for loop :
+
+#!/bin/bash
+for i in {1..10}
+do echo $i
+((i++))
+if (($i == 2))
+then 
+break
+fi 
+done
+
+using while loop:
+
+#!/bin/bash
+i=0
+while ((i <= 10))
+do 
+ echo $i
+ ((i++))
+  if (($i == 2 ))
+  then 
+   break
+  fi 
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

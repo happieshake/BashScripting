@@ -165,6 +165,101 @@ do
 done
 
 
+Q71: Write a script that will keep printing numbers from 1 to 5, and skip if number is 3 (Use while loop and Continue statement) ?
+
+#!/bin/bash
+i=0
+while (($i <= 4))
+do 
+ ((i++))
+ if (($i == 3))
+ then
+ continue
+ fi
+ echo "$i"
+done   
+
+Notes:logic is when variable equals 0 and while variable is less than 4 , make sure variable is added with a +1 and if variable now is equals to 3 , then set continue statement else , go on wth the next number 
+OP will be 1, 2, 4, 5 for 4 if we set 5 it will be 1,2,4,5,6
+
+Q72: A.Write a script that will keep printing odd numbers between 1 to 100 ?
+
+#!/bin/bash
+i=0
+while ((i <= 100))
+do 
+ ((i++))
+ if ((i%2 != 0))
+ echo "$i"
+ fi
+done
+
+Notes: noted if in the arithmetic modulus no need of $ to call in the varibale 
+
+Another way to find the odd numbers are (most elegant way)
+
+#!/bin/bash
+for ((i=1; i<=100; i=i+2))
+do
+echo "$i"
+done 
+
+Notes: The (())- arithmetic modulus contains the init , conditiion for the loop and the progression increment
+another while method:
+#!/bin/bash
+i=1
+while ((i<=100))
+do echo "$i"
+   ((i=i+2))
+done
+   
+Q73: B.Write a script that will keep printing even numbers between 1 to 100 ?
+
+#!/bin/bash
+for ((i=2; i<=100; i=i+2))
+do
+echo "$i"
+done
+
+notes in the arithmetic modulus (init , Condition , progression is set straight )
+The loop will follow the loop first with do so starting with 2 , if we start with zero , 0 will also be printed
+
+Q74: Write a script that will ask 2 numbers from user and then prints the sum of given 2 numbers ?
+
+#!/bin/bash
+read -p "give me no:1" num1
+read -p "give me no:2" num2
+sum=$((num1+num2))
+echo "$sum"
+
+Another way:
+
+#!/bin/bash
+echo "number 1"
+read num1
+echo "number 2"
+read num2
+sleep 2
+echo "The sum is $((num1+num2))"
+
+notes: sleep 2 is for drama 
+
+
+Q75: Write a script that will ask 2 numbers from user and then prints the multiplication of given 2 numbers ?
+
+#!/bin/bash
+echo "give no1"
+read
+echo "give no2"
+read
+echo "The multiplied values is $((num1*num2))"
+
+Notes: Just like + for addition * is used for multiplication in bash
+
+
+
+
+
 
 
 

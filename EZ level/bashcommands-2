@@ -90,4 +90,35 @@ Q20: Print current time in the format "HH:SS" ?
 
 Notes : can pass required pattern with date command , for eg: date +'%H:%M' , here %H is for current Hour , %M for running minute and %S for seconds usually from 00-59
 
+Q21: Display current month calendar on screen ?
+
+>cal
+
+Notes:  cal command is used to print the current month calendar on screen
+
+Q22: Display the hostname of your current server ?
+
+>hostname
+
+Notes: Hostname command is used for displaying the hostname of the current machine 
+
+Q23: Display the current logged in username ?
+
+>whoami
+
+Notes: whoami command is to figure out the username of the logged in user 
+
+Q24: Ping "udemy.com" from your terminal ?
+
+>ping -c5 udemy.com
+
+Notes: Ping command is used to ping any web address , and -c5 is used to send 5 packets and  ping command is used to test connectivity, reachability.
+
+Q25: Print recently triggered commands on your Linux system ?
+
+>history
+
+Notes: history cpmmand is used to view the list of commands that iser had triggered on the terminal
+
+
 

@@ -75,6 +75,42 @@ then we use modulus function (%) to compare the remainder and -eq is to compare 
 we use "then" function to echo and fi to end the if else conditions
 
 
+Q58: Create a script that will print "OK" if current hour is an even number ?
+
+#!/bin/bash
+Hour = 'date+%H'
+if [Hour%2] -eq 0
+then
+echo "OK"
+fi
+
+Notes: 'date+%H' denotes the hour from the date
+
+
+Q59: Create a script that will check if number is less 100 and then prints "less than 100" else prints "greater than 100" ?
+
+#!/bin/bash
+n=101
+if
+[$n -lt 100]
+then
+echo "Number is less than 100"
+else 
+echo "Number is greater than 100"
+fi
+
+Notes: $n is variable setting for n and n -lt 100 here -lt is less than function
+
+Q60: Create a script that will check if number is divisible by 10 and then prints "divisible by 10" else prints "not divisible by 10"  ?
+
+#!/bin/bash
+n = 95
+if [$n%10] -eq 0
+then echo "divisible by 10"
+else echo "not divisible by 10"
+fi
+
+
 
 
 
